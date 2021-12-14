@@ -15,11 +15,14 @@ body::before {
   padding-top: 50px;
 }
 
-#workpills-tab {
+#workpills-tab,
+#Eworkpills-tab {
   margin-top: 20px;
 }
 
-#workpills-tab li {
+#workpills-tab li,
+#pills-tab li,
+#Eworkpills-tab li {
   border: 1px solid #c8c8c8;
   margin: 1px;
   border-radius: 10%;
@@ -62,3 +65,53 @@ input,
 textarea {
   margin-bottom: 15px;
 }
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+
+  width: auto; /* set arbitrary dimensions */
+  height: auto;
+  overflow: scroll; /* causes .lightbox to be scrollable if children overflow it */
+}
+
+.lightbox img {
+  max-width: none; /* max-width: 90%; <---- don't set this (otherwise image will never overflow parent)*/
+  margin-top: 4%;
+  overflow-y: visible; /* overflow-y: scroll; <---- don't set this (images can't contain anythying, so nothing can overflow from them*/
+  height: auto; /* height: 100%; <---- don't set this (otherwise image will never overflow parent)*/
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+  outline: none;
+}
+
+/* .lightbox span { */
+/* Full width and height */
+/* display: block;
+  width: 100%;
+  height: 100%; */
+
+/* Size and position background image */
+/* background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
