@@ -66,6 +66,16 @@ textarea {
   margin-bottom: 15px;
 }
 
+.form-control,
+.form-control:focus {
+  background: #fff0;
+  color: #fff;
+}
+
+.form-control:focus {
+  color: #fff;
+}
+
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
