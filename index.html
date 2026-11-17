@@ -1,757 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kurt Piluden is a product-minded developer and designer building useful websites, interfaces, and Android apps.">
+  <meta name="theme-color" content="#0a0d12">
+  <title>Kurt Piluden — Developer & Designer</title>
 
-    <title>Kurt Piluden</title>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
-      <div class="container">
-        <a href="#" class="navbar-brand">~</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="navbarMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar nav ms-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-light">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link text-light">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link text-light">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link text-light">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link text-light">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://docs.google.com/document/d/1ZUvhlekT9rxdc0G_mpapQkmMATclfjS7/edit?usp=sharing&ouid=116935845436692806814&rtpof=true&sd=true" target="_blank" class="nav-link text-light">Resume</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Remove this import if you prefer to self-host fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Kurt Piluden home">KP<span>.</span></a>
+
+      <div class="nav-links" id="primary-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <!-- Replace this with your real resume URL. -->
+        <a class="nav-resume" href="https://docs.google.com/document/d/1ZUvhlekT9rxdc0G_mpapQkmMATclfjS7/edit" target="_blank" rel="noreferrer">Resume ↗</a>
       </div>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links">
+        <span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
     </nav>
+  </header>
 
-    <!-- Banner -->
-    <section
-      id="about-banner"
-      class="bg-dark text-light p-lg-0 pt-lg-5 p-5 text-cente text-sm-start"
-    >
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
-            <h5 class="fw-light">Hi, My name is</h5>
-            <h1 id="banner-name" class="text-warning fw-bold">Kurt</h1>
-            <div class="p-3">
-              <a href="#portfolio" class="px-3 btn btn-warning rounded-pill"
-                >Portfolio</a
-              >
-              <a href="#contact" class="px-3 lead text-decoration-none text-light"
-                >Contact Me</a
-              >
-            </div>
-            <div class="py-3">
-              <a href="https://www.facebook.com/kurt.piluden/" target="_blank"><i class="bi bi-facebook text-light mx-1"></i></a>
-              <a href="https://www.linkedin.com/in/kurt-piluden-186836158/" target="_blank"><i class="bi bi-linkedin text-light mx-1" ></i></a>
-            </div>
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Available for selected projects</p>
+        <h1 id="hero-title">I design and build <em>digital products</em> people enjoy using.</h1>
+        <p class="hero-lede">
+          I’m Kurt Piluden, a product-minded developer and designer helping small businesses and teams turn rough ideas into fast websites, polished interfaces, and practical mobile apps.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View selected work <span>↘</span></a>
+          <a class="button button-ghost" href="mailto:kurtpioluden@gmail.com?subject=Project%20inquiry">Start a project <span>↗</span></a>
+        </div>
+        <div class="hero-meta" aria-label="Specialties">
+          <span>Web design</span>
+          <span>Frontend development</span>
+          <span>Android</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="code-card"><span>01</span><code>build(<em>useful</em>)</code><span>↗</span></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">A few things I’ve made.</h2>
+        </div>
+        <p class="section-note">A mix of interface design, WordPress builds, and mobile product work.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <a class="project-media" href="#" data-placeholder-link aria-label="Open ITECH PFS project">
+            <img src="img/wp-work-1.png" alt="ITECH PFS website interface preview" loading="lazy" width="1200" height="800">
+            <span class="media-arrow">↗</span>
+          </a>
+          <div class="project-body">
+            <div class="project-topline"><span>01 / Website</span><span>WordPress</span></div>
+            <h3>ITECH PFS</h3>
+            <p>A clearer, more credible web presence for a technology-focused business, with a structured page system designed for easy content updates.</p>
+            <div class="tags"><span>WordPress</span><span>UI design</span><span>Responsive build</span></div>
+            <div class="project-links"><a href="#" data-placeholder-link>View live site ↗</a></div>
           </div>
-          <img
-            src="img/banner-img.svg"
-            class="w-50 img-fluid d-none d-sm-block"
-            alt=""
-          />
+        </article>
+
+        <article class="project-card">
+          <a class="project-media" href="#" data-placeholder-link aria-label="Open 3x Agency project">
+            <img src="img/elem-work1.png" alt="3x Agency landing page preview" loading="lazy" width="1200" height="800">
+            <span class="media-arrow">↗</span>
+          </a>
+          <div class="project-body">
+            <div class="project-topline"><span>02 / Website</span><span>Elementor</span></div>
+            <h3>3x Agency</h3>
+            <p>A polished agency experience that gives the brand a stronger visual hierarchy and a more direct path to enquiry.</p>
+            <div class="tags"><span>Elementor</span><span>UX structure</span><span>Web design</span></div>
+            <div class="project-links"><a href="#" data-placeholder-link>View project ↗</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-media" href="https://play.google.com/store/apps/details?id=com.flick.FlickPickAppOfficial" target="_blank" rel="noreferrer" aria-label="Open FlickPick on Google Play">
+            <img src="img/flickpick_logo.jpg" alt="FlickPick movie recommendation app logo" loading="lazy" width="1200" height="800">
+            <span class="media-arrow">↗</span>
+          </a>
+          <div class="project-body">
+            <div class="project-topline"><span>03 / Mobile app</span><span>Android</span></div>
+            <h3>FlickPick</h3>
+            <p>A movie and show recommendation app that learns from viewing preferences and gets more useful over time.</p>
+            <div class="tags"><span>Android</span><span>Product thinking</span><span>Recommendations</span></div>
+            <div class="project-links"><a href="https://play.google.com/store/apps/details?id=com.flick.FlickPickAppOfficial" target="_blank" rel="noreferrer">Google Play ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="services-title">From first sketch to final build.</h2>
+        </div>
+        <p class="section-note">Design and development working together, so details do not get lost in translation.</p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability"><span class="capability-number">01</span><h3>Product websites</h3><p>Responsive marketing sites and landing pages with clear structure, strong hierarchy, and maintainable content.</p></article>
+        <article class="capability"><span class="capability-number">02</span><h3>Interface systems</h3><p>Practical UI direction that turns scattered ideas into focused flows people can understand quickly.</p></article>
+        <article class="capability"><span class="capability-number">03</span><h3>Android apps</h3><p>Useful mobile experiences built around real user needs, from product thinking to implementation.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell" id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">About Kurt</p>
+          <h2 id="about-title">Creative thinking, logical execution.</h2>
+        </div>
+        <div class="about-copy">
+          <p>I’m a freelance developer and designer who has been building digital experiences since 2018. My work sits between visual design and implementation: I care about how a product looks, how it feels to use, and whether it is dependable under the hood.</p>
+          <p><strong>I work best with individuals, small businesses, and teams</strong> that want a thoughtful alternative to generic templates and disconnected handoffs.</p>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="bg-light py-5" id="about">
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <img
-            src="img/abt.png"
-            alt=""
-            class="w-25 img-fluid d-none d-sm-block"
-          />
-          <div class="px-5">
-            <h1 class="text-center">About Me</h1>
-            <p class="lead lh-lg">
-              I have been working as a freelance front-end, back-end and android developer since 2018. I’ve always been someone who has both a creative and a logical side. I could use my creative side to design and my logical side to code. As a bonus, being both designer and developer allows me to make sure no detail is lost in translation. I specialize in creating sites for individuals and small businesses. You shouldn’t have to settle for cheap solutions or generic templates. I provide custom designs at afforable prices. Take a look at my portfolio below, if you think I’d be a good match send me an <a class="text-primary text-decoration-none" href="mailto:kurtpioluden@gmail.com">email</a>. 
-            </p>
-          </div>
-        </div>
-      </div>
+    <section class="contact-panel shell" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">Have a project in mind?</p>
+      <h2 id="contact-title">Let’s make something clear, useful, and memorable.</h2>
+      <p>Tell me what you’re working on, what is not working yet, and what a successful outcome looks like.</p>
+      <a class="button button-primary" href="mailto:kurtpioluden@gmail.com?subject=Project%20inquiry">Email Kurt <span>↗</span></a>
     </section>
+  </main>
 
-    <!-- Services -->
-    <section class="bg-dark text-light py-5" id="services">
-      <div class="container">
-        <h1>Services</h1>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="card bg-secondary p-3">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="bi bi-code"></i> Website Development
-                </h5>
-                <!-- <p class="fs-6">3 years experience</p> -->
-                <p class="card-text lead">
-                  Website development refers to the work that goes into building
-                  a website. This could apply to anything from creating a single
-                  plain-text webpage to developing a complex web application or
-                  social network.
-                </p>
-                <!-- <p class="fs-6">HTML5, CSS3, JavaScript, PHP, WordPress</p> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card bg-secondary p-3">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="bi bi-display"></i> Website Design
-                </h5>
-                <!-- <p class="fs-6">3 years experience</p> -->
-                <p class="card-text lead">
-                  Web designers build or redesign websites. They understand what
-                  it takes to make a website functional and easy to use, but
-                  also understand what is needed to make it aesthetically
-                  appealing to the user.
-                </p>
-                <!-- <p class="fs-6">HTML5, CSS3, JavaScript, Bootstrap Layout Design, WordPress, Elementor</p> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card bg-secondary p-3">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="bi bi-phone"></i> Android Development
-                </h5>
-                <!-- <p class="fs-6">3 years experience</p> -->
-                <p class="card-text lead">
-                  An Android developer is just a mobile developer that has
-                  experience working with Android Studio and their SDK tools
-                  along with extensive knowledge of their libraries and
-                  frameworks to build Android applications.
-                </p>
-                <!-- <p class="fs-6">Android Studio</p> -->
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-6">
-            <div class="card bg-secondary p-3">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="bi bi-display"></i> Web Development
-                </h5>
-                <p class="fs-6">3 years experience</p>
-                <p class="card-text lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent at tortor dui. Integer purus justo, volutpat sit amet
-                  nisl vitae, tempus ullamcorper magna.
-                </p>
-                <p class="fs-6">HTML5, CSS3, JavaScript, PHP, Wordpress</p>
-              </div>
-            </div>
-          </div> -->
-        </div>
+  <footer class="site-footer">
+    <div class="footer-inner shell">
+      <span>© <span id="year"></span> Kurt Piluden</span>
+      <div class="social-links" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/kurt-piluden-186836158/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href="https://www.facebook.com/kurt.piluden/" target="_blank" rel="noreferrer">Facebook ↗</a>
+        <a href="mailto:kurtpioluden@gmail.com">Email ↗</a>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- Portfolio -->
-    <section class="bg-light text-dark py-5" id="portfolio">
-      <div class="container">
-        <h1>My Works</h1>
-        <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" >
-              ITECH - PFS ~ WordPress Page Design
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" >
-              3x Agency ~ Elementor Page Design
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" >
-              Android Application
-            </button>
-          </li>
-        </ul>
+  <script>
+    (() => {
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.nav-links');
+      const body = document.body;
+      const year = document.querySelector('#year');
 
-        <div class="tab-content" id="pills-tabContent">
-          <!-- WordPress -->
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+      if (year) year.textContent = new Date().getFullYear();
 
-            <!-- Pages Content -->
-            <div class="tab-content" id="workpills-tabContent">
-              <div class="tab-pane show active fade" id="page-one" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img1"><img src="img/wp-work-1.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img1">
-                      <img src="img/wp-work-1.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img2"><img src="img/wp-work-2.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img2">
-                      <img src="img/wp-work-2.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
+      toggle?.addEventListener('click', () => {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        links.classList.toggle('is-open', !isOpen);
+        body.classList.toggle('menu-open', !isOpen);
+      });
 
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img3"><img src="img/wp-work-3.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img3">
-                      <img src="img/wp-work-3.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+      links?.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          toggle?.setAttribute('aria-expanded', 'false');
+          links.classList.remove('is-open');
+          body.classList.remove('menu-open');
+        });
+      });
 
-              <div class="tab-pane fade" id="page-two" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img4"><img src="img/wp-work-4.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img4">
-                      <img src="img/wp-work-4.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img5"><img src="img/wp-work-5.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img5">
-                      <img src="img/wp-work-5.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img6"><img src="img/wp-work-6.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img6">
-                      <img src="img/wp-work-6.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-three" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img7"><img src="img/wp-work-7.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img7">
-                      <img src="img/wp-work-7.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img8"><img src="img/wp-work-8.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img8">
-                      <img src="img/wp-work-8.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img9"><img src="img/wp-work-9.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img9">
-                      <img src="img/wp-work-9.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-four" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img10"><img src="img/wp-work-10.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img10">
-                      <img src="img/wp-work-10.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img11"><img src="img/wp-work-11.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img11">
-                      <img src="img/wp-work-11.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img12"><img src="img/wp-work-12.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img12">
-                      <img src="img/wp-work-12.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-five" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img13"><img src="img/wp-work-13.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img13">
-                      <img src="img/wp-work-13.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img14"><img src="img/wp-work-14.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img14">
-                      <img src="img/wp-work-14.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img15"><img src="img/wp-work-15.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img15">
-                      <img src="img/wp-work-15.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-six" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img16"><img src="img/wp-work-16.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img16">
-                      <img src="img/wp-work-16.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img17"><img src="img/wp-work-17.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img17">
-                      <img src="img/wp-work-17.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img18"><img src="img/wp-work-18.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img18">
-                      <img src="img/wp-work-18.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-seven" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img19"><img src="img/wp-work-19.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img19">
-                      <img src="img/wp-work-19.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img20"><img src="img/wp-work-20.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img20">
-                      <img src="img/wp-work-20.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img21"><img src="img/wp-work-21.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img21">
-                      <img src="img/wp-work-21.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-eight" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img22"><img src="img/wp-work-22.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img22">
-                      <img src="img/wp-work-22.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img23"><img src="img/wp-work-23.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img23">
-                      <img src="img/wp-work-23.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img24"><img src="img/wp-work-24.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img24">
-                      <img src="img/wp-work-24.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-nine" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img25"><img src="img/wp-work-25.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img25">
-                      <img src="img/wp-work-25.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#img26"><img src="img/wp-work-26.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="img26">
-                      <img src="img/wp-work-26.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pages -->
-              <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="workpills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="work-home-tab" data-bs-toggle="pill" data-bs-target="#page-one" type="button" role="tab">
-                    1
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-profile-tab" data-bs-toggle="pill" data-bs-target="#page-two" type="button" role="tab" >
-                    2
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-three" type="button" role="tab" >
-                    3
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-four" type="button" role="tab" >
-                    4
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-five" type="button" role="tab" >
-                    5
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-six" type="button" role="tab" >
-                    6
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-seven" type="button" role="tab" >
-                    7
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-eight" type="button" role="tab" >
-                    8
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-nine" type="button" role="tab" >
-                    9
-                  </button>
-                </li>
-              </ul>
-          </div>
-
-          <!-- Elementor -->
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-            <!-- Pages Content -->
-            <div class="tab-content" id="Eworkpills-tabContent">
-              <div class="tab-pane show active fade" id="page-oneElem" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg1"><img src="img/elem-work1.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg1">
-                      <img src="img/elem-work1.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg2"><img src="img/elem-work2.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg2">
-                      <img src="img/elem-work2.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg3"><img src="img/elem-work3.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg3">
-                      <img src="img/elem-work3.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-twoElem" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg4"><img src="img/elem-work4.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg4">
-                      <img src="img/elem-work4.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg5"><img src="img/elem-work5.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg5">
-                      <img src="img/elem-work5.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg6"><img src="img/elem-work6.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg6">
-                      <img src="img/elem-work6.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="page-threeElem" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg7"><img src="img/elem-work7.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg7">
-                      <img src="img/elem-work7.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg8"><img src="img/elem-work8.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg8">
-                      <img src="img/elem-work8.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="screen">
-                      <a href="#Eimg9"><img src="img/elem-work9.png" alt="" class="img-fluid" /></a>
-                    </div>
-                    <!-- lightbox container hidden with CSS -->
-                    <a href="#portfolio" class="lightbox" id="Eimg9">
-                      <img src="img/elem-work9.png" alt="" class="lightbox_content" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pages -->
-            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="Eworkpills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="work-home-tab" data-bs-toggle="pill" data-bs-target="#page-oneElem" type="button" role="tab">
-                  1
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="work-profile-tab" data-bs-toggle="pill" data-bs-target="#page-twoElem" type="button" role="tab" >
-                  2
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="work-contact-tab" data-bs-toggle="pill" data-bs-target="#page-threeElem" type="button" role="tab" >
-                  3
-                </button>
-              </li>
-            </ul>
-
-          </div>
-
-          <!-- Android -->
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel">
-            <div class="row">
-              <div class="col">
-                <div class="card mb-3" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="img/flickpick_logo.jpg" class="img-fluid rounded-start" alt="...">
-                      <img src="img/qrcode_play.google.com.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">FlickPick App</h5> <hr>
-                        <p class="card-text fs-6 fw-light">When you use FlickPick, it starts to learn what kinds of movies and shows you like, and can suggest flicks for you to watch, accordingly! 
-                          The more you use FlickPick, the more accurate the suggestions become!
-                          </p><hr>
-                          <a href="https://play.google.com/store/apps/details?id=com.flick.FlickPickAppOfficial" target="_blank" class="btn btn-primary btn-md" tabindex="-1" role="button" aria-disabled="true">Google Play</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="bg-dark text-light py-5" id="contact">
-      <div class="container">
-        <div class="align-items-center">
-          <h1 class="pb-3 text-center">Let's Get In Touch</h1>
-          <div class="row">
-            <div class="offset-sm-3 col-sm-6 offset-sm-3 align-items-center text-center">
-              <div class="card-body border border-secondary">
-                <h5 class="card-title">Email</h5>
-                <p class="card-text fs-6 fw-light"><a class="text-light text-decoration-none" href="mailto:kurtpioluden@gmail.com">kurtpiluden@gmail.com</a></p><hr>
-                <h5 class="card-title">Contact</h5>
-                <p class="card-text fs-6 fw-light">+63 9565884848</p><hr>
-                <h5 class="card-title">Address</h5>
-                <p class="card-text fs-6 fw-light">Interior C, Balacbac, Sto. Tomas Proper </p><hr>
-              </div>
-            <!-- <div class="col-sm-4 align-items-center text-center">
-              <div class="card-body border border-secondary">
-                <h5 class="card-title">Email</h5>
-                <p class="card-text fs-6 fw-light"><a class="text-light text-decoration-none" href="mailto:kurtpioluden@gmail.com">kurtpiluden@gmail.com</a></p><hr>
-                <h5 class="card-title">Contact</h5>
-                <p class="card-text fs-6 fw-light">+63 9565884848</p><hr>
-                <h5 class="card-title">Address</h5>
-                <p class="card-text fs-6 fw-light">Interior C, Balacbac, Sto. Tomas Proper </p><hr>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <form action="">
-                <div class="row">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Name"/>
-                  </div>
-                  <div class="col">
-                    <input type="email" class="form-control" placeholder="Email"/>
-                  </div>
-                </div>
-                <input type="text" class="form-control" placeholder="Subject" />
-                <textarea class="form-control" placeholder="Message" id="message" style="height: 100px"
-                ></textarea>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-primary btn-lg" type="button">Submit</button>
-                </div>
-              </form>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      document.querySelectorAll('[data-placeholder-link]').forEach((link) => {
+        link.addEventListener('click', (event) => {
+          if (link.getAttribute('href') === '#') {
+            event.preventDefault();
+            window.alert('Replace this placeholder with the real project URL in index.html.');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
 </html>
