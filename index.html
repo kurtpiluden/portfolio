@@ -1,202 +1,256 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kurt Piluden is a product-minded developer and designer building useful websites, interfaces, and Android apps.">
-  <meta name="theme-color" content="#0a0d12">
-  <title>Kurt Piluden — Developer & Designer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kurt Piluden is a product-minded developer and designer building useful websites, interfaces, and Android apps.">
+    <meta name="theme-color" content="#0a0d12">
+    <title>Kurt Piluden — Developer & Designer</title>
 
-  <!-- Remove this import if you prefer to self-host fonts. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  
+    <!-- Remove this import if you prefer to self-host fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
 </head>
 
 <body>
-  <header class="site-header">
+<header class="site-header">
     <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Kurt Piluden home">KP<span>.</span></a>
+        <a class="brand" href="#top" aria-label="Kurt Piluden home">KP<span>.</span></a>
 
-      <div class="nav-links" id="primary-links">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <!-- Replace this with your real resume URL. -->
-        <a class="nav-resume" href="https://docs.google.com/document/d/1ZUvhlekT9rxdc0G_mpapQkmMATclfjS7/edit" target="_blank" rel="noreferrer">Resume ↗</a>
-      </div>
+        <div class="nav-links" id="primary-links">
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <!-- Replace this with your real resume URL. -->
+            <a class="nav-resume" href="https://docs.google.com/document/d/1ZUvhlekT9rxdc0G_mpapQkmMATclfjS7/edit" target="_blank" rel="noreferrer">Resume ↗</a>
+        </div>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links">
-        <span></span><span></span>
-        <span class="sr-only">Toggle navigation</span>
-      </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links">
+            <span></span><span></span>
+            <span class="sr-only">Toggle navigation</span>
+        </button>
     </nav>
-  </header>
+</header>
 
-  <main id="top">
+<main id="top">
     <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Available for selected projects</p>
-        <h1 id="hero-title">I design and build <em>digital products</em> people enjoy using.</h1>
-        <p class="hero-lede">
-          I’m Kurt Piluden, a product-minded developer and designer helping small businesses and teams turn rough ideas into fast websites, polished interfaces, and practical mobile apps.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">View selected work <span>↘</span></a>
-          <a class="button button-ghost" href="mailto:kurtpioluden@gmail.com?subject=Project%20inquiry">Start a project <span>↗</span></a>
+        <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Available for selected projects</p>
+            <h1 id="hero-title">I design and build <em>digital products</em> people enjoy using.</h1>
+            <p class="hero-lede">
+                I’m Kurt Piluden, a product-minded developer and designer helping small businesses and teams turn rough ideas into fast websites, polished interfaces, and practical mobile apps.
+            </p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#work">View selected work <span>↘</span></a>
+                <a class="button button-ghost" href="mailto:kurtpioluden@gmail.com?subject=Project%20inquiry">Start a project <span>↗</span></a>
+            </div>
+            <div class="hero-meta" aria-label="Specialties">
+                <span>Web design</span>
+                <span>Frontend development</span>
+                <span>Android</span>
+            </div>
         </div>
-        <div class="hero-meta" aria-label="Specialties">
-          <span>Web design</span>
-          <span>Frontend development</span>
-          <span>Android</span>
-        </div>
-      </div>
 
-      <div class="hero-art" aria-hidden="true">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="code-card"><span>01</span><code>build(<em>useful</em>)</code><span>↗</span></div>
-      </div>
+        <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="code-card"><span>01</span><code>build(<em>useful</em>)</code><span>↗</span></div>
+        </div>
     </section>
 
     <section class="section shell" id="work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Selected work</p>
-          <h2 id="work-title">A few things I’ve made.</h2>
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Selected work</p>
+                <h2 id="work-title">A few things I’ve made.</h2>
+            </div>
+            <div class="section-note"><p>A mix of interface design, WordPress builds, and mobile product work.</p><a class="project-links" href="gallery.html">View all screens ↗</a></div>
         </div>
-        <p class="section-note">A mix of interface design, WordPress builds, and mobile product work.</p>
-      </div>
 
-      <div class="project-grid">
-        <article class="project-card project-featured">
-          <a class="project-media" href="#" data-placeholder-link aria-label="Open ITECH PFS project">
-            <img src="img/wp-work-1.png" alt="ITECH PFS website interface preview" loading="lazy" width="1200" height="800">
-            <span class="media-arrow">↗</span>
-          </a>
-          <div class="project-body">
-            <div class="project-topline"><span>01 / Website</span><span>WordPress</span></div>
-            <h3>ITECH PFS</h3>
-            <p>A clearer, more credible web presence for a technology-focused business, with a structured page system designed for easy content updates.</p>
-            <div class="tags"><span>WordPress</span><span>UI design</span><span>Responsive build</span></div>
-            <div class="project-links"><a href="#" data-placeholder-link>View live site ↗</a></div>
-          </div>
-        </article>
+        <div class="work-slider">
+            <div class="slider-controls" aria-label="Selected work controls">
+                <button class="slider-button" type="button" data-slider-prev aria-label="Previous project">←</button>
+                <button class="slider-button" type="button" data-slider-next aria-label="Next project">→</button>
+            </div>
 
-        <article class="project-card">
-          <a class="project-media" href="#" data-placeholder-link aria-label="Open 3x Agency project">
-            <img src="img/elem-work1.png" alt="3x Agency landing page preview" loading="lazy" width="1200" height="800">
-            <span class="media-arrow">↗</span>
-          </a>
-          <div class="project-body">
-            <div class="project-topline"><span>02 / Website</span><span>Elementor</span></div>
-            <h3>3x Agency</h3>
-            <p>A polished agency experience that gives the brand a stronger visual hierarchy and a more direct path to enquiry.</p>
-            <div class="tags"><span>Elementor</span><span>UX structure</span><span>Web design</span></div>
-            <div class="project-links"><a href="#" data-placeholder-link>View project ↗</a></div>
-          </div>
-        </article>
+            <div class="project-grid" data-project-slider>
+                <article class="project-card">
+                    <button class="project-media" type="button" data-lightbox-src="img/wp-work-1.png" data-lightbox-title="ITECH PFS — WordPress page design" aria-label="View ITECH PFS image enlarged">
+                        <img src="img/wp-work-1.png" alt="ITECH PFS website interface preview" loading="lazy" width="1200" height="800">
+                        <span class="media-arrow">⌕</span>
+                    </button>
+                    <div class="project-body">
+                        <div class="project-topline"><span>01 / Website</span><span>WordPress</span></div>
+                        <h3>ITECH PFS</h3>
+                        <p>A clearer, more credible web presence for a technology-focused business, with a structured page system designed for easy content updates.</p>
+                        <div class="tags"><span>WordPress</span><span>UI design</span><span>Responsive build</span></div>
+                        <div class="project-links"><a href="gallery.html#wordpress-title" data-placeholder-link>View Project ↗</a></div>
+                    </div>
+                </article>
 
-        <article class="project-card">
-          <a class="project-media" href="https://play.google.com/store/apps/details?id=com.flick.FlickPickAppOfficial" target="_blank" rel="noreferrer" aria-label="Open FlickPick on Google Play">
-            <img src="img/flickpick_logo.jpg" alt="FlickPick movie recommendation app logo" loading="lazy" width="1200" height="800">
-            <span class="media-arrow">↗</span>
-          </a>
-          <div class="project-body">
-            <div class="project-topline"><span>03 / Mobile app</span><span>Android</span></div>
-            <h3>FlickPick</h3>
-            <p>A movie and show recommendation app that learns from viewing preferences and gets more useful over time.</p>
-            <div class="tags"><span>Android</span><span>Product thinking</span><span>Recommendations</span></div>
-            <div class="project-links"><a href="https://play.google.com/store/apps/details?id=com.flick.FlickPickAppOfficial" target="_blank" rel="noreferrer">Google Play ↗</a></div>
-          </div>
-        </article>
-      </div>
+                <article class="project-card">
+                    <button class="project-media" type="button" data-lightbox-src="img/elem-work1.png" data-lightbox-title="3x Agency — Elementor page design" aria-label="View 3x Agency image enlarged">
+                        <img src="img/elem-work1.png" alt="3x Agency landing page preview" loading="lazy" width="1200" height="800">
+                        <span class="media-arrow">⌕</span>
+                    </button>
+                    <div class="project-body">
+                        <div class="project-topline"><span>02 / Website</span><span>Elementor</span></div>
+                        <h3>3x Agency</h3>
+                        <p>A polished agency experience that gives the brand a stronger visual hierarchy and a more direct path to enquiry.</p>
+                        <div class="tags"><span>Elementor</span><span>UX structure</span><span>Web design</span></div>
+                        <div class="project-links"><a href="gallery.html#elementor-title" data-placeholder-link>View project ↗</a></div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <button class="project-media" type="button" data-lightbox-src="img/flickpick_logo.jpg" data-lightbox-title="FlickPick — Android app" aria-label="View FlickPick image enlarged">
+                        <img src="img/flickpick_logo.jpg" alt="FlickPick movie recommendation app logo" loading="lazy" width="1200" height="800">
+                        <span class="media-arrow">⌕</span>
+                    </button>
+                    <div class="project-body">
+                        <div class="project-topline"><span>03 / Mobile app</span><span>Android</span></div>
+                        <h3>FlickPick</h3>
+                        <p>A movie and show recommendation app that learns from viewing preferences and gets more useful over time.</p>
+                        <div class="tags"><span>Android</span><span>Product thinking</span><span>Recommendations</span></div>
+                        <div class="project-links"><a href="https://play.google.com/store/apps/details?id=com.flick.FlickPickAppOfficial" target="_blank" rel="noreferrer">Google Play ↗</a></div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
-    <section class="section shell" id="services" aria-labelledby="services-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Capabilities</p>
-          <h2 id="services-title">From first sketch to final build.</h2>
+    <dialog class="lightbox" id="image-lightbox" aria-labelledby="lightbox-title">
+        <div class="lightbox-toolbar">
+            <p class="lightbox-title" id="lightbox-title">Project preview</p>
+            <div class="lightbox-actions"><button class="lightbox-button" type="button" data-lightbox-close aria-label="Close image preview">×</button></div>
         </div>
-        <p class="section-note">Design and development working together, so details do not get lost in translation.</p>
-      </div>
+        <div class="lightbox-stage" data-lightbox-stage>
+            <img data-lightbox-image src="" alt="">
+        </div>
+    </dialog>
 
-      <div class="capability-grid">
-        <article class="capability"><span class="capability-number">01</span><h3>Product websites</h3><p>Responsive marketing sites and landing pages with clear structure, strong hierarchy, and maintainable content.</p></article>
-        <article class="capability"><span class="capability-number">02</span><h3>Interface systems</h3><p>Practical UI direction that turns scattered ideas into focused flows people can understand quickly.</p></article>
-        <article class="capability"><span class="capability-number">03</span><h3>Android apps</h3><p>Useful mobile experiences built around real user needs, from product thinking to implementation.</p></article>
-      </div>
+    <section class="section shell" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Capabilities</p>
+                <h2 id="services-title">From first sketch to final build.</h2>
+            </div>
+            <p class="section-note">Design and development working together, so details do not get lost in translation.</p>
+        </div>
+
+        <div class="capability-grid">
+            <article class="capability"><span class="capability-number">01</span><h3>Product websites</h3><p>Responsive marketing sites and landing pages with clear structure, strong hierarchy, and maintainable content.</p></article>
+            <article class="capability"><span class="capability-number">02</span><h3>Interface systems</h3><p>Practical UI direction that turns scattered ideas into focused flows people can understand quickly.</p></article>
+            <article class="capability"><span class="capability-number">03</span><h3>Android apps</h3><p>Useful mobile experiences built around real user needs, from product thinking to implementation.</p></article>
+        </div>
     </section>
 
     <section class="section shell" id="about" aria-labelledby="about-title">
-      <div class="about-grid">
-        <div>
-          <p class="eyebrow">About Kurt</p>
-          <h2 id="about-title">Creative thinking, logical execution.</h2>
+        <div class="about-grid">
+            <div>
+                <p class="eyebrow">About Kurt</p>
+                <h2 id="about-title">Creative thinking, logical execution.</h2>
+            </div>
+            <div class="about-copy">
+                <p>I’m a freelance developer and designer who has been building digital experiences since 2018. My work sits between visual design and implementation: I care about how a product looks, how it feels to use, and whether it is dependable under the hood.</p>
+                <p><strong>I work best with individuals, small businesses, and teams</strong> that want a thoughtful alternative to generic templates and disconnected handoffs.</p>
+            </div>
         </div>
-        <div class="about-copy">
-          <p>I’m a freelance developer and designer who has been building digital experiences since 2018. My work sits between visual design and implementation: I care about how a product looks, how it feels to use, and whether it is dependable under the hood.</p>
-          <p><strong>I work best with individuals, small businesses, and teams</strong> that want a thoughtful alternative to generic templates and disconnected handoffs.</p>
-        </div>
-      </div>
     </section>
 
     <section class="contact-panel shell" id="contact" aria-labelledby="contact-title">
-      <p class="eyebrow">Have a project in mind?</p>
-      <h2 id="contact-title">Let’s make something clear, useful, and memorable.</h2>
-      <p>Tell me what you’re working on, what is not working yet, and what a successful outcome looks like.</p>
-      <a class="button button-primary" href="mailto:kurtpioluden@gmail.com?subject=Project%20inquiry">Email Kurt <span>↗</span></a>
+        <p class="eyebrow">Have a project in mind?</p>
+        <h2 id="contact-title">Let’s make something clear, useful, and memorable.</h2>
+        <p>Tell me what you’re working on, what is not working yet, and what a successful outcome looks like.</p>
+        <a class="button button-primary" href="mailto:kurtpioluden@gmail.com?subject=Project%20inquiry">Email Kurt <span>↗</span></a>
     </section>
-  </main>
+</main>
 
-  <footer class="site-footer">
+<footer class="site-footer">
     <div class="footer-inner shell">
-      <span>© <span id="year"></span> Kurt Piluden</span>
-      <div class="social-links" aria-label="Social links">
-        <a href="https://www.linkedin.com/in/kurt-piluden-186836158/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <a href="https://www.facebook.com/kurt.piluden/" target="_blank" rel="noreferrer">Facebook ↗</a>
-        <a href="mailto:kurtpioluden@gmail.com">Email ↗</a>
-      </div>
+        <span>© <span id="year"></span> Kurt Piluden</span>
+        <div class="social-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/kurt-piluden-186836158/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://www.facebook.com/kurt.piluden/" target="_blank" rel="noreferrer">Facebook ↗</a>
+            <a href="mailto:kurtpioluden@gmail.com">Email ↗</a>
+        </div>
     </div>
-  </footer>
+</footer>
 
-  <script>
+<script>
     (() => {
-      const toggle = document.querySelector('.menu-toggle');
-      const links = document.querySelector('.nav-links');
-      const body = document.body;
-      const year = document.querySelector('#year');
+        const toggle = document.querySelector('.menu-toggle');
+        const links = document.querySelector('.nav-links');
+        const body = document.body;
+        const year = document.querySelector('#year');
 
-      if (year) year.textContent = new Date().getFullYear();
+        if (year) year.textContent = new Date().getFullYear();
 
-      toggle?.addEventListener('click', () => {
-        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!isOpen));
-        links.classList.toggle('is-open', !isOpen);
-        body.classList.toggle('menu-open', !isOpen);
-      });
-
-      links?.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => {
-          toggle?.setAttribute('aria-expanded', 'false');
-          links.classList.remove('is-open');
-          body.classList.remove('menu-open');
+        toggle?.addEventListener('click', () => {
+            const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!isOpen));
+            links.classList.toggle('is-open', !isOpen);
+            body.classList.toggle('menu-open', !isOpen);
         });
-      });
 
-      document.querySelectorAll('[data-placeholder-link]').forEach((link) => {
-        link.addEventListener('click', (event) => {
-          if (link.getAttribute('href') === '#') {
-            event.preventDefault();
-            window.alert('Replace this placeholder with the real project URL in index.html.');
-          }
+        links?.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                toggle?.setAttribute('aria-expanded', 'false');
+                links.classList.remove('is-open');
+                body.classList.remove('menu-open');
+            });
         });
-      });
+
+        document.querySelectorAll('[data-placeholder-link]').forEach((link) => {
+            link.addEventListener('click', (event) => {
+                if (link.getAttribute('href') === '#') {
+                    event.preventDefault();
+                    window.alert('Replace this placeholder with the real project URL in index.html.');
+                }
+            });
+        });
+
+        const slider = document.querySelector('[data-project-slider]');
+        const previousProject = document.querySelector('[data-slider-prev]');
+        const nextProject = document.querySelector('[data-slider-next]');
+
+        const slideByCard = (direction) => {
+            const card = slider?.querySelector('.project-card');
+            if (!slider || !card) return;
+            const gap = parseFloat(getComputedStyle(slider).gap) || 20;
+            slider.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+        };
+
+        previousProject?.addEventListener('click', () => slideByCard(-1));
+        nextProject?.addEventListener('click', () => slideByCard(1));
+
+        const lightbox = document.querySelector('#image-lightbox');
+        const lightboxImage = lightbox?.querySelector('[data-lightbox-image]');
+        const lightboxTitle = lightbox?.querySelector('#lightbox-title');
+        const openLightbox = (button) => {
+            if (!lightbox || !lightboxImage) return;
+            lightboxImage.src = button.dataset.lightboxSrc;
+            lightboxImage.alt = button.querySelector('img')?.alt || 'Project preview';
+            lightboxTitle.textContent = button.dataset.lightboxTitle || 'Project preview';
+            lightbox.showModal();
+        };
+
+        document.querySelectorAll('[data-lightbox-src]').forEach((button) => {
+            button.addEventListener('click', () => openLightbox(button));
+        });
+
+        lightbox?.querySelector('[data-lightbox-close]')?.addEventListener('click', () => lightbox.close());
+        lightbox?.addEventListener('click', (event) => {
+            if (event.target === lightbox) lightbox.close();
+        });
+        lightbox?.addEventListener('close', () => {
+            if (lightboxImage) lightboxImage.src = '';
+        });
     })();
-  </script>
+</script>
 </body>
 </html>
