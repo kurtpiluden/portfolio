@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Selected website and mobile app screens by Kurt Piluden.">
+    <meta name="theme-color" content="#0a0d12">
+    <title>Project Gallery — Kurt Piluden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav shell" aria-label="Gallery navigation">
+        <a class="brand" href="index.html" aria-label="Back to Kurt Piluden portfolio">KP<span>.</span></a>
+        <a class="back-link" href="index.html#work">← Back to selected work</a>
+    </nav>
+</header>
+
+<main class="shell">
+    <p class="eyebrow">Project gallery</p>
+    <h1>More screens, same attention to detail.</h1>
+    <p class="intro">Browse selected WordPress, Elementor, and FlickPick screens. Click any image to open a clean full-size preview.</p>
+
+    <section class="gallery-section" aria-labelledby="wordpress-title">
+        <div class="section-heading"><h2 id="wordpress-title">ITECH PFS</h2><p class="section-note">WordPress page design · 26 screens</p></div>
+        <div class="gallery-grid">
+            <script>
+                for (let i = 1; i <= 26; i++) {
+                    document.write(`<article class="gallery-item"><button class="gallery-image" type="button" data-src="img/wp-work-${i}.png" data-title="ITECH PFS — screen ${i}" aria-label="View ITECH PFS screen ${i} enlarged"><img src="img/wp-work-${i}.png" alt="ITECH PFS website screen ${i}" loading="lazy" width="1200" height="800"></button><div class="gallery-caption"><strong>ITECH PFS</strong><span>Screen ${i} · WordPress</span></div></article>`);
+                }
+            </script>
+        </div>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="elementor-title">
+        <div class="section-heading"><h2 id="elementor-title">3x Agency</h2><p class="section-note">Elementor page design · 9 screens</p></div>
+        <div class="gallery-grid">
+            <script>
+                for (let i = 1; i <= 9; i++) {
+                    document.write(`<article class="gallery-item"><button class="gallery-image" type="button" data-src="img/elem-work${i}.png" data-title="3x Agency — screen ${i}" aria-label="View 3x Agency screen ${i} enlarged"><img src="img/elem-work${i}.png" alt="3x Agency website screen ${i}" loading="lazy" width="1200" height="800"></button><div class="gallery-caption"><strong>3x Agency</strong><span>Screen ${i} · Elementor</span></div></article>`);
+                }
+            </script>
+        </div>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="flickpick-title">
+        <div class="section-heading"><h2 id="flickpick-title">FlickPick</h2><p class="section-note">Android app</p></div>
+        <div class="gallery-grid">
+            <article class="gallery-item"><button class="gallery-image" type="button" data-src="img/flickpick_logo.jpg" data-title="FlickPick — app logo" aria-label="View FlickPick logo enlarged"><img src="img/flickpick_logo.jpg" alt="FlickPick Android app logo" loading="lazy" width="1200" height="800"></button><div class="gallery-caption"><strong>FlickPick</strong><span>App logo · Android</span></div></article>
+            <article class="gallery-item"><button class="gallery-image" type="button" data-src="img/qrcode_play.google.com.png" data-title="FlickPick — Google Play QR code" aria-label="View FlickPick QR code enlarged"><img src="img/qrcode_play.google.com.png" alt="FlickPick Google Play QR code" loading="lazy" width="800" height="800"></button><div class="gallery-caption"><strong>FlickPick</strong><span>Google Play QR code</span></div></article>
+        </div>
+    </section>
+</main>
+
+<dialog class="lightbox" id="gallery-lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox-toolbar"><p class="lightbox-title" id="lightbox-title">Image preview</p><button class="close-button" type="button" data-close aria-label="Close image preview">×</button></div>
+    <div class="lightbox-stage"><img data-preview src="" alt=""></div>
+</dialog>
+
+<script>
+    (() => {
+        const lightbox = document.querySelector('#gallery-lightbox');
+        const preview = lightbox.querySelector('[data-preview]');
+        const title = lightbox.querySelector('#lightbox-title');
+        document.querySelectorAll('[data-src]').forEach((button) => {
+            button.addEventListener('click', () => {
+                preview.src = button.dataset.src;
+                preview.alt = button.querySelector('img')?.alt || 'Image preview';
+                title.textContent = button.dataset.title || 'Image preview';
+                lightbox.showModal();
+            });
+        });
+        lightbox.querySelector('[data-close]').addEventListener('click', () => lightbox.close());
+        lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
+        lightbox.addEventListener('close', () => { preview.src = ''; });
+    })();
+</script>
+</body>
+</html>
